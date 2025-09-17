@@ -8,7 +8,7 @@
 		<version>3.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.0210</groupId>
+	<groupId>com.github.id0_21_0</groupId>
 	<artifactId>train-eat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>train-eat</name>
