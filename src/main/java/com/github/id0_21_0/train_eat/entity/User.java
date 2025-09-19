@@ -1,4 +1,4 @@
-package com.github.id0_21_0.train_eat;
+package com.github.id0_21_0.train_eat.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
