@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>用户管理</title>
+</head>
+
+<body>
+    <button id="back">返回</button>
+    <button id="selectUser">刷新用户列表</button>
+    <button id="addUser">添加用户</button>
+    <button id="updateUser">修改用户</button>
+    <button id="deleteUser">删除用户</button>
+    <div id="addUserDiv" hidden>
+        <label>新用户名：
+            <input name="addUserName" id="addUserName" placeholder="请输入用户名">
+        </label>
+        <button id="addCommit">添加</button>
+    </div>
+    <div id="updateUserDiv" hidden>
+        <lable>要修改的用户id：
+            <input type="text" id="updateUserId" placeholder="请输入位于列表中的id">
+        </lable>
+        <label>修改后的名字
+            <input id="updateUserName" type = "text" placeholder="新名字">
+        </label>
+        <button id="updateCommit">修改</button>
+    </div>
+    <div id="deleteUserDiv" hidden>
+        <label>要删除的用户id：
+            <input id="deleteUserId">
+        </label>
+        <button id="deleteCommit">删除</button>
+    </div>
+    <ul id="userList"></ul>
+    <script src="userManage.js"></script>
+</body>
+
+</html>

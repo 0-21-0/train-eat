@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 
 
 @Entity
@@ -13,6 +14,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @NotBlank(message = "用户名不能为空")
     private String name;
 
     public Long getId(){return id;}
@@ -20,4 +23,5 @@ public class User {
 
     public String getName(){return name;}
     public void setName(String name){this.name = name;}
+
 }
