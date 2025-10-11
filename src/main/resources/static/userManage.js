@@ -133,12 +133,8 @@ deleteCommit.addEventListener("click", function () {
         alert("没有输入列表中存在的id！");
         return;
     }
-    fetch(`/deleteUser`, {
-        method: "DELETE",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.parse(deleteId)
+    fetch(`/deleteUser/${deleteId}`, {
+        method: "DELETE"
     }).then(res => {
         if(res.ok){
             console.log(`删除成功！`);
